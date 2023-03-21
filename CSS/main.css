@@ -1,0 +1,80 @@
+
+body {
+    background-color: #28292B;
+    text-align: center; 
+} 
+
+.game-container {
+    margin: auto;
+    height: 220px;
+    width: 250px;
+    border: 3px solid #F6F8FD;
+    border-radius: 10px;
+    background-color:#F6F8FD;
+}
+
+.game-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.game-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    width: 58px;
+    cursor: pointer;
+    background-color:rgb(75, 38, 150);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 4px;
+    user-select: none;             
+}
+
+.subBttn {
+    height: 50px; 
+    border-radius: 10px; 
+    margin-top: 10px; 
+    margin-right: 10px; 
+    margin-left: 10px;
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.rotate360 {
+  transition: .75s;
+  transform: rotate(360deg);
+}
