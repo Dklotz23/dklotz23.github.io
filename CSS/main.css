@@ -2,6 +2,14 @@
   display: inline-block;
 }
 
+.navbar-brand {
+    display: inline-block;
+}
+
+.text-center {
+  display: inline-block;
+}
+
 body {
     background-color: #28292B;
     text-align: center; 
